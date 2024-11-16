@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import localFont from "next/font/local";
-import { ClerkProvider } from '@clerk/nextjs';
+import {ClerkProvider} from '@clerk/nextjs';
+import Providers from "@/app/providers";
 
 import "./globals.css";
 
@@ -20,18 +21,14 @@ export const metadata: Metadata = {
   description: "Next Js Jobify",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({children,}: Readonly<{ children: React.ReactNode; }>) {
   return (
     <ClerkProvider>
-      <html lang="en">
+      <html lang="en" suppressHydrationWarning>
         <body
           className={`${geistSans.variable} ${geistMono.variable} antialiased`}
         >
-          {children}
+          <Providers>{children}</Providers>
         </body>
       </html>
     </ClerkProvider>

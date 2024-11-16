@@ -1,4 +1,8 @@
+import CreateJobForm from "@/components/CreateJobForm";
+
 function AddJobPage() {
-  return <h1>AddJobPage</h1>
+  return <>
+    <CreateJobForm />
+  </>
 }
 export default AddJobPage;

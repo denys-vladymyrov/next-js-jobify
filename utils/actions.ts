@@ -191,7 +191,7 @@ export async function getChartsDataAction(): Promise<
   Array<{ date: string; count: number }>
 > {
   const userId = authenticateAndRedirect();
-  const sixMonthsAgo = dayjs().subtract(6, 'month').toDate();
+  const sixMonthsAgo = dayjs().subtract(24, 'month').toDate();
 
   try {
     const jobs = await prisma.job.findMany({

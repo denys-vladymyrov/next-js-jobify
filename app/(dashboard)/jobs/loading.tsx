@@ -1,9 +1,12 @@
-const Loading = () => {
+import { Skeleton } from '@/components/ui/skeleton';
+
+function loading() {
   return (
-    <div>
-      <h2 className='text-xl font-medium capitalize'>loading...</h2>
+    <div className='p-8 grid sm:grid-cols-2 md:grid-cols-3  gap-4 rounded-lg border'>
+      <Skeleton className='h-10' />
+      <Skeleton className='h-10 ' />
+      <Skeleton className='h-10 ' />
     </div>
   );
-};
-
-export default Loading;
+}
+export default loading;

@@ -4,11 +4,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 1. Next.js
 2. TypeScript
-3. Prisma
-4. Zod
+3. React Query
+4. Prisma
 5. Shadcn ui
 6. Supabase 
 7. Clerk User Management Platform.
+8. Zod.
 
 ## Getting Started
 

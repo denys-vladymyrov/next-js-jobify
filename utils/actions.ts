@@ -16,6 +16,7 @@ type GetAllJobsActionTypes = {
 
 function authenticateAndRedirect(): string {
   const { userId } = auth();
+  console.log(userId);
 
   if (!userId) redirect('/');
 

@@ -10,8 +10,6 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 6. Supabase 
 7. Clerk User Management Platform.
 
-Production URL: https://next-js-store-gamma.vercel.app/
-
 ## Getting Started
 
 First, run the development server:
